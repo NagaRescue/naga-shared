@@ -1,6 +1,6 @@
 {
   "name": "@naga-rescue/shared",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Canonical Naga City barangay dataset, the victim-condition vocabulary and SMS token vectors every app must agree on, plus the generators and checkers for them.",
   "type": "module",
   "license": "UNLICENSED",
@@ -10,7 +10,10 @@
   },
   "exports": {
     ".": "./render.mjs",
-    "./contracts": "./contracts.cjs",
+    "./contracts": {
+      "types": "./contracts.d.ts",
+      "default": "./contracts.cjs"
+    },
     "./naga-barangays.json": "./naga-barangays.json",
     "./victim-conditions.json": "./victim-conditions.json",
     "./sms-token-vectors.json": "./sms-token-vectors.json"
@@ -18,6 +21,7 @@
   "files": [
     "render.mjs",
     "contracts.cjs",
+    "contracts.d.ts",
     "bin/sync.mjs",
     "naga-barangays.json",
     "victim-conditions.json",
