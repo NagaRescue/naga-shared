@@ -1,7 +1,7 @@
 {
   "name": "@naga-rescue/shared",
-  "version": "1.0.0",
-  "description": "Canonical Naga City barangay dataset (names, PSGC codes, COD boundary polygons) and the generator that produces each app's bundled copy.",
+  "version": "1.1.0",
+  "description": "Canonical Naga City barangay dataset, the victim-condition vocabulary and SMS token vectors every app must agree on, plus the generators and checkers for them.",
   "type": "module",
   "license": "UNLICENSED",
   "private": false,
@@ -10,12 +10,18 @@
   },
   "exports": {
     ".": "./render.mjs",
-    "./naga-barangays.json": "./naga-barangays.json"
+    "./contracts": "./contracts.cjs",
+    "./naga-barangays.json": "./naga-barangays.json",
+    "./victim-conditions.json": "./victim-conditions.json",
+    "./sms-token-vectors.json": "./sms-token-vectors.json"
   },
   "files": [
     "render.mjs",
+    "contracts.cjs",
     "bin/sync.mjs",
     "naga-barangays.json",
+    "victim-conditions.json",
+    "sms-token-vectors.json",
     "naga_city_barangays_latlong.csv"
   ],
   "scripts": {

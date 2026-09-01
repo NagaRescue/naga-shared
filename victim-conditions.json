@@ -1,0 +1,31 @@
+{
+  "$comment": "Canonical victim-condition vocabulary. Edit here, then run npm run check:contracts in each consumer.",
+  "notReportedLabel": "Not reported",
+  "conditions": [
+    {
+      "value": "waiting",
+      "code": "1",
+      "label": "Waiting, not in danger yet"
+    },
+    {
+      "value": "trapped",
+      "code": "2",
+      "label": "Trapped, cannot get out"
+    },
+    {
+      "value": "in_water",
+      "code": "3",
+      "label": "In the water"
+    },
+    {
+      "value": "injured",
+      "code": "4",
+      "label": "Injured"
+    },
+    {
+      "value": "unconscious",
+      "code": "5",
+      "label": "Someone is unconscious"
+    }
+  ]
+}

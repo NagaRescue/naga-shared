@@ -1,0 +1,42 @@
+{
+  "$comment": "Canonical HMAC-SHA256 token vectors. Every implementation must reproduce these exactly.",
+  "algorithm": "HMAC-SHA256 over the signed body, hex digest truncated to the first 10 chars",
+  "tokenHexChars": 10,
+  "vectors": [
+    {
+      "body": "SOS MESSAGE|4|3|13.6218|123.1948|5|2|1756012800",
+      "secret": "d57233191567dcbed238d87eb9cfdd8e",
+      "token": "fa6182b824"
+    },
+    {
+      "body": "NR|1|DSP|12|4|3|13.62|123.19|5|Abella|1756012800",
+      "secret": "db2a995dd6b4f54b96a78614f11a24e7",
+      "token": "2fc7b9a4bf"
+    },
+    {
+      "body": "NR|1|ACK|12|3|88|1756012800",
+      "secret": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "token": "8800065d9c"
+    },
+    {
+      "body": "NR|1|EWS|Red|Zone 1,Zone 2|Abella|1756012800",
+      "secret": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+      "token": "723e747d09"
+    },
+    {
+      "body": "NR|1|CHK|3|Alpha Team|09512412208|1756012800",
+      "secret": "0123456789abcdef0123456789abcdef",
+      "token": "1ab7750b79"
+    },
+    {
+      "body": "SOS MESSAGE|1|1|13.0|123.0|1|0|1700000000",
+      "secret": "short",
+      "token": "68c66d1ac3"
+    },
+    {
+      "body": "NR|1|ACK|1|1|1|1700000000",
+      "secret": "ünïcödé-sécret-ß",
+      "token": "698e6ea58a"
+    }
+  ]
+}
