@@ -1,0 +1,24 @@
+{
+  "name": "@naga-rescue/shared",
+  "version": "1.0.0",
+  "description": "Canonical Naga City barangay dataset (names, PSGC codes, COD boundary polygons) and the generator that produces each app's bundled copy.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": false,
+  "bin": {
+    "naga-sync": "bin/sync.mjs"
+  },
+  "exports": {
+    ".": "./render.mjs",
+    "./naga-barangays.json": "./naga-barangays.json"
+  },
+  "files": [
+    "render.mjs",
+    "bin/sync.mjs",
+    "naga-barangays.json",
+    "naga_city_barangays_latlong.csv"
+  ],
+  "scripts": {
+    "test": "node --test"
+  }
+}

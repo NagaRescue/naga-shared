@@ -1,0 +1,61 @@
+# =========================
+# Node
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Environment Variables
+# =========================
+# .env holds the backend address and any API tokens for this checkout.
+# .env.example is the tracked template — keep it in step with what the code reads.
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs / Temp / Coverage
+# =========================
+logs/
+*.log
+tmp/
+temp/
+.cache/
+coverage/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.directory
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Per-developer Claude Code settings: these accumulate absolute paths from the
+# machine that wrote them and, historically, a literal PGPASSWORD. A shared
+# .claude/settings.json and .claude/agents/ ARE tracked.
+.claude/settings.local.json
+
+# =========================
+# Misc
+# =========================
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Package output
+# =========================
+*.tgz
